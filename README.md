@@ -29,4 +29,4 @@ npx wrangler pages deploy public --project-name aicademy
 
 ## Sources
 
-Content comes from aicademy's 2023–2024 pitch decks, ads and data model. Traction figures are from the June 2023 deck.
+Content comes from aicademy's 2023–2024 pitch decks, ads and data model. Traction figures are lifetime totals (2023–2026).
