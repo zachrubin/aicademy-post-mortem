@@ -27,7 +27,7 @@
   --margin: #E7B4B4;
   --hl: #FFE766;
   --hl-ink: #14213D;
-  --accent: #2945B8;
+  --accent: #5426D9;
 
   --f-display: "Young Serif", "Iowan Old Style", Georgia, serif;
   --f-body: "Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif;
@@ -47,13 +47,13 @@
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --paper: #0E1424; --card: #151D33; --ink: #E7ECF5; --ink-soft: #9CA8C2;
-    --rule: #263049; --margin: #5C3140; --hl: #E9D24A; --hl-ink: #0E1424; --accent: #93AAFF;
+    --rule: #263049; --margin: #5C3140; --hl: #E9D24A; --hl-ink: #0E1424; --accent: #B59CFF;
     color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
   --paper: #0E1424; --card: #151D33; --ink: #E7ECF5; --ink-soft: #9CA8C2;
-  --rule: #263049; --margin: #5C3140; --hl: #E9D24A; --hl-ink: #0E1424; --accent: #93AAFF;
+  --rule: #263049; --margin: #5C3140; --hl: #E9D24A; --hl-ink: #0E1424; --accent: #B59CFF;
   color-scheme: dark;
 }
 
@@ -135,7 +135,8 @@ p.prose { display: block; }
   padding-block: 1.25rem;
   font-family: var(--f-mono); font-size: var(--step--1); color: var(--ink-soft);
 }
-.wordmark { font-family: var(--f-display); font-size: 1.35rem; color: var(--ink); text-decoration: none; }
+.wordmark { font-family: var(--f-display); font-size: 1.35rem; color: var(--ink); text-decoration: none; display: inline-flex; align-items: center; gap: 0.55rem; }
+.wordmark .mark { width: 1.6rem; height: auto; flex: none; }
 .top nav { display: flex; gap: 1.25rem; flex-wrap: wrap; justify-content: flex-end; }
 .top nav a { color: var(--ink-soft); text-decoration: none; }
 .top nav a:hover { color: var(--ink); text-decoration: underline; }
@@ -319,7 +320,7 @@ footer {
 <div class="page">
 
   <header class="top">
-    <a class="wordmark" href="#">aicademy</a>
+    <a class="wordmark" href="#"><svg class="mark" viewBox="0 0 1490 1208" aria-hidden="true"><defs><linearGradient id="aic-g" gradientUnits="userSpaceOnUse" x1="0" y1="1208" x2="1490" y2="700"><stop offset="0" stop-color="#FF9E86"/><stop offset=".22" stop-color="#FF45EE"/><stop offset=".5" stop-color="#A535F3"/><stop offset=".75" stop-color="#6B27EC"/><stop offset="1" stop-color="#3F1AD6"/></linearGradient></defs><path fill="url(#aic-g)" fill-rule="evenodd" d="M736 0L1490 1208H0ZM736 517L465 956H1012Z"/></svg>aicademy</a>
     <nav aria-label="Sections">
       <a href="#timeline">Timeline</a>
       <a href="#built">What we built</a>
@@ -501,7 +502,7 @@ footer {
     <div class="body wide">
       <h2 id="numbers-h">Small, real numbers</h2>
       <div class="numbers">
-        <div><b>30</b><span>trial subscribers</span></div>
+        <div><b>103</b><span>trial subscribers</span></div>
         <div><b>10</b><span>paying subscribers</span></div>
         <div><b>$9.99</b><span>a month, after a free trial</span></div>
         <div><b>$0</b><span>spent on acquisition</span></div>
